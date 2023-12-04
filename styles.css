@@ -57,6 +57,9 @@ body {
     height: 100vh; /* Utiliza el 100% de la altura de la ventana */
 }
 
+.hidden {
+    display: none;
+}
 .indexcont {
     width: 70%;
     height: 60%; /* Ajusta la altura según tus preferencias */
@@ -136,4 +139,102 @@ height: 11rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.abrir-menu 
+{display: none;}
+
+.cerrar-menu {display: none;}
+
+@media screen and (max-width: 750px) {
+    .abrir-menu {display: block;
+        border: 0;
+    cursor: pointer;
+background-color: #000;
+border: 2px solid #14E210;
+float: right;
+margin-right: 5%;
+padding: 1rem;
+font-size: 1rem;
+font-family: "Zen Dots" ;
+color: #14E210;
+margin-top: 1rem;
+
+}
+    .cerrar-menu {display: block;
+    border: 0;
+cursor: pointer;
+font-family: "Zen Dots" ;
+color: #14E210;
+background-color: #000;
+font-size: 0.80rem;
+} 
+
+
+
+
+
+.header {padding-bottom: 6rem;}
+    
+    .navegacion {opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+    }
+    .navegacion.visible {opacity: 1;
+        visibility: visible;
+    align-items: end;
+    z-index: 3;}
+
+
+    .lista {flex-direction: column;
+    align-items: end;
+    z-index: 3;}
+
+
+    
+    .boton {
+       
+        width: 50%; /* Divide el ancho en 4 partes iguales y ajusta los márgenes */
+        background: #14E210;
+        margin-left: 4rem;
+        padding: 0%;
+        z-index: 3;
+    }
+    
+    
+    .letrab {
+        color: #011601;
+        text-align: center;
+        font-family: Zen Dots;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    
+    .indexbody {
+            display: flex;
+            width: 100%;
+            justify-content: center; /* Centra horizontalmente el contenido */
+            align-items: center; /* Centra verticalmente el contenido */
+            height: 100vh; /* Utiliza el 100% de la altura de la ventana */
+            flex-direction: column; 
+            z-index: 1;
+    }
+
+    .indexcont1 {
+        width: 85%;
+        z-index: 2;
+
+    }
+    .indextext {position: relative;
+    font-size: 1rem;}
+    .img3 {  width: 100%;
+        height: auto;}
 }
